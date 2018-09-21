@@ -93,7 +93,7 @@ Similar script as the Maize files was used to process the Teosinte files, with s
 `join -1 1 -2 1 -a 2 sorted_snp_position.txt sorted_teosinte.txt > joined_snp_teosinte.txt`
 
 
-_**Generating the required files**
+_**Generating the required files**_
 
 10 files with SNPs ordered in increasing position values
 
