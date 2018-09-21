@@ -34,7 +34,7 @@ To keep the headers from the fang file in the new Maize genotypes file, I extrac
 ` cat header_fang.txt genotypes_maize.txt > genotypes_maize_header.txt`
 
 
-Transposed the maize genotypes file with header using the following command in 'awk' as provided in the assignment hints
+Transposed the maize genotypes file with header using the following command in `awk` as provided in the assignment hints
 
 `awk -f transpose.awk genotypes_maize_header.txt  > genotypes_maize_transposed.txt`
 
@@ -55,7 +55,7 @@ Checked joining using the command:
 `wc -l sorted_snp_position.txt sorted_maize.txt joined_snp_maize.txt`
 
 
-###_**Generating the required files**_
+_**Generating the required files**_
 
 
 10 files with SNPs ordered in increasing position values: Typed the following `awk` command 10 times, once for each chromosome, to select chromosome number from the second column and piped it to the sort by numeric value command for the third column for SNP position  
@@ -93,7 +93,7 @@ Similar script as the Maize files was used to process the Teosinte files, with s
 `join -1 1 -2 1 -a 2 sorted_snp_position.txt sorted_teosinte.txt > joined_snp_teosinte.txt`
 
 
-###_**Generating the required files**
+_**Generating the required files**
 
 10 files with SNPs ordered in increasing position values
 
@@ -112,6 +112,6 @@ Similar script as the Maize files was used to process the Teosinte files, with s
 `awk '$2 = "multiple"' joined_snp_teosinte.txt > multiple_teosinte.txt`
 
 
-##To check the files that were generated I used `cat -n 1 (filename)` and `vim (filename)`
+#To check the files that were generated I used `cat -n 1 (filename)` and `vim (filename)`
 
 ##I worked on this assignment and generated these files in the class hpc_class directory. I then moved these to a seperate directory in my home directory, initialized it with Git and committed and pushed these files to my repository after git remote adding it.  
